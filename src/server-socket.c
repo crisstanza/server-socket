@@ -39,7 +39,7 @@ int main(int argc, char *argv[]) {
 	
 	c = sizeof(struct sockaddr_in);
 	
-	while(1)	 {
+	while(1) {
 		client_sock = accept( socket_desc, (struct sockaddr *) &client, (socklen_t*) &c );
 		if (client_sock < 0) {
 			printf("[ERROR] Accept failed.\n");
